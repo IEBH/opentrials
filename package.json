@@ -1,0 +1,40 @@
+{
+  "name": "opentrials",
+  "version": "0.0.0",
+  "description": "Adapter for OpenTrials.net",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CREBP/opentrials.git"
+  },
+  "keywords": [
+    "opentrials",
+    "trials",
+    "adapter",
+    "search",
+    "medical",
+    "research"
+  ],
+  "author": "Matt Carter <m@ttcarter.com> (https://github.com/hash-bang)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CREBP/opentrials/issues"
+  },
+  "homepage": "https://github.com/CREBP/opentrials#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.16.6",
+    "mustache": "^2.3.0",
+    "superagent": "^2.3.0",
+    "traverse": "^0.6.6"
+  }
+}
