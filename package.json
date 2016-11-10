@@ -1,6 +1,6 @@
 {
   "name": "opentrials",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Node adapter for OpenTrials.net",
   "main": "index.js",
   "scripts": {
