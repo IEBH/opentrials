@@ -1,7 +1,7 @@
 {
   "name": "opentrials",
   "version": "0.0.0",
-  "description": "Adapter for OpenTrials.net",
+  "description": "Node adapter for OpenTrials.net",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
