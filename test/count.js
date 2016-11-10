@@ -16,4 +16,4 @@ describe('clinicaltrials.count()', function() {
 		});
 	});
 
-})
+});

@@ -29,4 +29,4 @@ describe('clinicaltrials.search()', function() {
 		});
 	});
 
-})
+});
