@@ -18,8 +18,8 @@ Config is stored in the `config` object. Values can be changed by setting them d
 | `urls`          | Object  | See source code | URL end points to use when interacting with the OpenTrials API                 |
 
 
-get(trialId, callback)
-----------------------
+get(trialId, [settings], callback)
+----------------------------------
 Retrieve a single trial by its OTID.
 
 ```javascript
@@ -32,8 +32,8 @@ ot.get('4cd4011e-8caf-11e6-be70-0242ac12000f', function(err, res) {
 ```
 
 
-tidy(trialObject)
------------------
+tidy(trialObject, [settings])
+-----------------------------
 Tidy up a raw OT JSON response.
 
 Behaviours include:
