@@ -30,10 +30,10 @@ describe('clinicaltrials.get()', function() {
 
 	it('should have tidied up dates', function() {
 		expect(ref).to.have.property('registrationDate');
-		expect(ref.registrationDate).to.be.a.date;
+		expect(ref.registrationDate).to.be.an.instanceOf(Date);
 
 		expect(ref).to.have.deep.property('records');
-		ref.records.forEach(rec => expect(rec.updatedAt).to.be.a.date);
+		ref.records.forEach(rec => expect(rec.updatedAt).to.be.an.instanceOf(Date));
 	});
 
 })
