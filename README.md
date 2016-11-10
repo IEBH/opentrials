@@ -16,6 +16,24 @@ Config is stored in the `config` object. Values can be changed by setting them d
 | `tidy.dates`    | Boolean | `true`          | Whether to tidy up date values to JavaScript Date types                        |
 | `tidy.dateKeys` | Array   | See source code | An array of strings and regular expressions when converting keys to date types |
 | `urls`          | Object  | See source code | URL end points to use when interacting with the OpenTrials API                 |
+| `page`          | Number  | `1`             | The page offset of results to return when using `search()`                     |
+| `pageLimit`     | Number  | `10`            | The number of items to return per page when using `search()`                   |
+
+
+count(terms, [settings], callback)
+-----------------------------------
+Return the number of matching OpenTrials by a query.
+
+This function will return a single number of the matching trials.
+
+```javascript
+var ot = require('opentrials');
+
+ot.count('cancer', function(err, res) {
+	// Err is any error that occured
+	// Res is the number of found trials
+});
+```
 
 
 get(trialId, [settings], callback)
@@ -28,6 +46,22 @@ var ot = require('opentrials');
 ot.get('4cd4011e-8caf-11e6-be70-0242ac12000f', function(err, res) {
 	// Err is any error that occured
 	// Res is the trial object
+});
+```
+
+
+search(terms, [settings], callback)
+-----------------------------------
+Search for multiple OpenTrials by a query.
+
+This will return an array of all found trials split into pages. You can change the page offset by setting `settings.page` (or the number within a page with `settings.pageLimit`).
+
+```javascript
+var ot = require('opentrials');
+
+ot.search('cancer', function(err, res) {
+	// Err is any error that occured
+	// Res is the found trials
 });
 ```
 
