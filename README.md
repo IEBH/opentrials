@@ -56,6 +56,8 @@ Search for multiple OpenTrials by a query.
 
 This will return an array of all found trials split into pages. You can change the page offset by setting `settings.page` (or the number within a page with `settings.pageLimit`).
 
+The search terms can be either a simple string or any valid [Elastic Search string](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/query-dsl-query-string-query.html#query-string-syntax).
+
 ```javascript
 var ot = require('opentrials');
 
